@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #1e293b; /* dark blue */
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.role-label {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.active-role {
+  opacity: 1;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* Toggle switch */
+.toggle {
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle.active {
+  background-color: #22c55e; /* green */
+}
+
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 3px;
+  transition: transform 0.3s ease;
+}
+
+.toggle.active .toggle-circle {
+  transform: translateX(24px);
+}
+
+/* dashboard */
+.dashboard {
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.charts-container {
+  display: flex;
+  gap: 20px;
+}
+
+.chart {
+  flex: 1;
+  height: 250px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transactions {
+  padding: 20px;
+}
+
+.search {
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 250px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #1e293b;
+  color: white;
+}
+
+.income {
+  color: green;
+  font-weight: bold;
+}
+
+.expense {
+  color: red;
+  font-weight: bold;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.insights {
+  padding: 20px;
+  margin-top: 20px;
+  background: #f1f5f9;
+  border-radius: 10px;
+}
