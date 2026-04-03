@@ -46,5 +46,7 @@
 
 ## Setup
 cd dashboard-app
+
 npm install  
+
 npm run dev
